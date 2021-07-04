@@ -32,6 +32,7 @@
         android:layout_width="170dp"
         android:layout_height="70dp"
         android:text="送料"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amazon_kakakuView" />
 
     <Button
@@ -80,9 +81,7 @@
         android:layout_height="wrap_content"
         android:text="入力"
         app:backgroundTint="#434343"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/amazon_souryouView"
         app:layout_constraintTop_toBottomOf="@+id/amazon_souryouView" />
 
     <Button
