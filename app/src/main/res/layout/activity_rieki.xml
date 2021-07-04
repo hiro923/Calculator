@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiekiActivity">
+
+
+    <Button
+        android:id="@+id/rieki_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入力"
+        app:backgroundTint="#434343"
+        app:layout_constraintEnd_toEndOf="@+id/rieki_souryouView"
+        app:layout_constraintTop_toBottomOf="@+id/rieki_souryouView" />
+
+    <TextView
+        android:id="@+id/rieki_kakakuView"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:text="価格"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/syouhizei_outView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/rieki_souryouView"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:text="送料"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rieki_kakakuView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/rieki_outView"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:text="結果"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/rieki_2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="2"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/rieki_1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="1"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/rieki_7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="7"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/rieki_8"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="8"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/rieki_5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="5"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <Button
+        android:id="@+id/syouhizei_AC3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="AC"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/rieki_3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="3"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/rieki_period"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="."
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <Button
+        android:id="@+id/rieki_9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="9"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/rieki_0"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:text="0"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <Button
+        android:id="@+id/rieki_6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="6"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <Button
+        android:id="@+id/rieki_4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="4"
+        android:textSize="25sp"
+        app:backgroundTint="#434343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <Spinner
+        android:id="@+id/rieki_spinner"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:entries="@array/rieki"
+        app:layout_constraintStart_toStartOf="@+id/rieki_outView"
+        app:layout_constraintTop_toBottomOf="@+id/rieki_outView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
