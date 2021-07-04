@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list1">
+        <item>m</item>
+        <item>km</item>
+        <item>cm</item>
+        <item>mm</item>
+        <item>g</item>
+        <item>mg</item>
+        <item>kg</item>
+        <item>t</item>
+    </string-array>
+
+    <string-array name="list2">
+        <item>m</item>
+        <item>km</item>
+        <item>cm</item>
+        <item>mm</item>
+        <item>g</item>
+        <item>mg</item>
+        <item>kg</item>
+        <item>t</item>
+    </string-array>
+
+
+    <string-array name="tuuka1">
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>KRW</item>
+    </string-array>
+
+
+    <string-array name="tuuka2">
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>KRW</item>
+    </string-array>
+
+
+    <string-array name="rieki">
+        <item>メルカリ</item>
+        <item>ヤフオク</item>
+    </string-array>
+
+    <string-array name="amazon">
+        <item>本</item>
+        <item>CD・レコード</item>
+        <item>DVD</item>
+        <item>ビデオ</item>
+        <item>AV機器・携帯電話</item>
+        <item>カメラ</item>
+        <item>パソコン・周辺機器</item>
+        <item>Amazonデバイス用アクセサリ</item>
+        <item>楽器</item>
+        <item>ドラッグストア</item>
+        <item>美容</item>
+        <item>スポーツ・アウトドア</item>
+        <item>車・バイク用品</item>
+        <item>おもちゃ</item>
+        <item>TVゲーム</item>
+        <item>PCソフト</item>
+        <item>ペット用品</item>
+        <item>文房具・オフィス用品</item>
+        <item>インテリア・キッチン</item>
+        <item>家具</item>
+        <item>大型家電</item>
+        <item>食料・飲料</item>
+        <item>腕時計</item>
+        <item>ジュエリー</item>
+        <item>服・ファッション小物</item>
+        <item>シューズ・バッグ</item>
+        <item>その他</item>
+    </string-array>
+
+</resources>
+
