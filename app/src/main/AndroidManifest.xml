@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.210704_Calculator03">
-        <activity android:name=".tuukaActivity"></activity>
-        <activity android:name=".AmazonActivity" />
-        <activity android:name=".GenkaActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HeikinActivity"/>
+        <activity android:name=".CalculatorActivity">
+            //ここから
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            //ここまで を起動時に開きたいアクティビティのタグ内に書き込む 参考 https://qiita.com/okhiroyuki/items/8410433493c83ff6b4ca
         </activity>
+        <activity android:name=".tuukaActivity" />
+        <activity android:name=".AmazonActivity" />
+        <activity android:name=".GenkaActivity" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
