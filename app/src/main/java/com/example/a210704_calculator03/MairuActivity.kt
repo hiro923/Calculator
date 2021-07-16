@@ -79,3 +79,5 @@ class MairuActivity : AppCompatActivity() {
         }
     }
 }
+
+//a
