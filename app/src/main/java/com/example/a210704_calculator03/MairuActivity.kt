@@ -2,12 +2,7 @@ package com.example.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.a210704_calculator03.databinding.ActivityCalculatorBinding
-import com.example.a210704_calculator03.databinding.ActivityMainBinding
 import com.example.a210704_calculator03.databinding.ActivityMairuBinding
-import java.lang.ArithmeticException
-
 class MairuActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMairuBinding   //bindViewを使うためのなんか
@@ -24,7 +19,7 @@ class MairuActivity : AppCompatActivity() {
         //初期化
         var calcResult = ""                          //画面に表示する数・表示されている数
         var valueList = mutableListOf<String>()      //入力される数字　を格納
-        var operateList = mutableListOf<String>()    //入力される演算子を格納
+        var kmka = 1.609344
         binding.mairuInView.text = "0"
 
         //「ac」ボタン
@@ -77,7 +72,30 @@ class MairuActivity : AppCompatActivity() {
             calcResult += "9"
             binding.mairuInView.text = calcResult.toString()
         }
+
+
+        //「＝」ボタン
+        binding.mairuKMka.setOnClickListener {
+
+            //calcResultの中身が""の場合、valueListにはいれない
+            if(calcResult != ""){
+
+                valueList.add(calcResult)   //画面の数をvalueListへ
+//                var text = StringBuilder()
+//                for (i in valueList.indices){     //TODO  valueListの中身を順にtextへ追加ていき、入れ終わったらcalcHistoryへtextを代入
+//                    text.append(valueList[i])
+//                }
+//                binding.calcHistory.text = text
+
+            }
+
+            //計算結果を出力
+            Integer.parseInt(binding.mairuInView.text) * kmka= calcResult
+            binding.mairuOutView.text = calcResult
+
+            //初期化 (calcResultを除く)
+            valueList = mutableListOf<String>()
+            operateList = mutableListOf<String>()
+        }
     }
 }
-
-//a

@@ -76,7 +76,6 @@ class CalculatorActivity : AppCompatActivity() {
 
         //「＝」ボタン
         binding.calcEqual.setOnClickListener {
-            Log.d("TAG", "IN")
 
             //calcResultの中身が""の場合、valueListにはいれない
             if(calcResult != ""){
