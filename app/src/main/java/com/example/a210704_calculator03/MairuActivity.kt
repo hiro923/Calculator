@@ -19,13 +19,11 @@ class MairuActivity : AppCompatActivity() {
         //初期化
         var calcResult = ""                          //画面に表示する数・表示されている数
         var valueList = mutableListOf<String>()      //入力される数字　を格納
-        var kmka = 1.609344
         binding.mairuInView.text = "0"
 
         //「ac」ボタン
         binding.mairuAC.setOnClickListener {
             valueList = arrayListOf<String>()
-            operateList = arrayListOf<String>()
             calcResult = ""
             binding.mairuInView.text = calcResult
         }
@@ -74,7 +72,7 @@ class MairuActivity : AppCompatActivity() {
         }
 
 
-        //「＝」ボタン
+        //「kmka」ボタン
         binding.mairuKMka.setOnClickListener {
 
             //calcResultの中身が""の場合、valueListにはいれない
@@ -90,12 +88,34 @@ class MairuActivity : AppCompatActivity() {
             }
 
             //計算結果を出力
-            Integer.parseInt(binding.mairuInView.text) * kmka= calcResult
-            binding.mairuOutView.text = calcResult
+            var kmResult = binding.mairuInView.text.toString().toInt() * 1.60
+            binding.mairuOutView.text = kmResult.toString()
 
             //初期化 (calcResultを除く)
             valueList = mutableListOf<String>()
-            operateList = mutableListOf<String>()
+        }
+
+        //「mairuka」ボタン
+        binding.mairuMairuka.setOnClickListener {
+
+            //calcResultの中身が""の場合、valueListにはいれない
+            if(calcResult != ""){
+
+                valueList.add(calcResult)   //画面の数をvalueListへ
+//                var text = StringBuilder()
+//                for (i in valueList.indices){     //TODO  valueListの中身を順にtextへ追加ていき、入れ終わったらcalcHistoryへtextを代入
+//                    text.append(valueList[i])
+//                }
+//                binding.calcHistory.text = text
+
+            }
+
+            //計算結果を出力
+            var kmResult = binding.mairuInView.text.toString().toInt() * 0.6214
+            binding.mairuOutView.text = kmResult.toString()
+
+            //初期化 (calcResultを除く)
+            valueList = mutableListOf<String>()
         }
     }
 }
