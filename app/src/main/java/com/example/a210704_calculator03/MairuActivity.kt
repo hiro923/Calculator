@@ -25,57 +25,57 @@ class MairuActivity : AppCompatActivity() {
         var calcResult = ""                          //画面に表示する数・表示されている数
         var valueList = mutableListOf<String>()      //入力される数字　を格納
         var operateList = mutableListOf<String>()    //入力される演算子を格納
-        binding.mairuOutView.text = "0"
+        binding.mairuInView.text = "0"
 
         //「ac」ボタン
         binding.mairuAC.setOnClickListener {
             valueList = arrayListOf<String>()
             operateList = arrayListOf<String>()
             calcResult = ""
-            binding.mairuOutView.text = calcResult
+            binding.mairuInView.text = calcResult
         }
 
 
         //数字ボタン
         binding.mairu0.setOnClickListener {
             calcResult += "0"
-            binding.mairuOutView.text = calcResult
+            binding.mairuInView.text = calcResult
         }
         binding.mairu1.setOnClickListener {
             calcResult += "1"
-            binding.mairuOutView.text = calcResult
+            binding.mairuInView.text = calcResult
         }
         binding.mairu2.setOnClickListener {
             calcResult += "2"
-            binding.mairuOutView.text = calcResult
+            binding.mairuInView.text = calcResult
         }
         binding.mairu3.setOnClickListener {
             calcResult += "3"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu4.setOnClickListener {
             calcResult += "4"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu5.setOnClickListener {
             calcResult += "5"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu6.setOnClickListener {
             calcResult += "6"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu7.setOnClickListener {
             calcResult += "7"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu8.setOnClickListener {
             calcResult += "8"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
         binding.mairu9.setOnClickListener {
             calcResult += "9"
-            binding.mairuOutView.text = calcResult.toString()
+            binding.mairuInView.text = calcResult.toString()
         }
     }
 }
