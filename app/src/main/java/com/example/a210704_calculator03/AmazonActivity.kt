@@ -50,93 +50,43 @@ class AmazonActivity : AppCompatActivity() {
 
 
         //数字ボタン
-        if (sentaku == "1") {
-            binding.main0.setOnClickListener {
-                calcResult += "0"
-                binding.amazonKakakuView.text = calcResult
-            }
-            binding.main1.setOnClickListener {
-                calcResult += "1"
-                binding.amazonKakakuView.text = calcResult
-            }
-            binding.main2.setOnClickListener {
-                calcResult += "2"
-                binding.amazonKakakuView.text = calcResult
-            }
-            binding.main3.setOnClickListener {
-                calcResult += "3"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main4.setOnClickListener {
-                calcResult += "4"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main5.setOnClickListener {
-                calcResult += "5"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main6.setOnClickListener {
-                calcResult += "6"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main7.setOnClickListener {
-                calcResult += "7"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main8.setOnClickListener {
-                calcResult += "8"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-            binding.main9.setOnClickListener {
-                calcResult += "9"
-                binding.amazonKakakuView.text = calcResult.toString()
-            }
-
+        binding.main0.setOnClickListener {
+            plusValue(0)
         }
 
-        //数字ボタン
-        if (sentaku == "2") {
-            binding.main0.setOnClickListener {
-                souryouResult += "0"
-                binding.amazonSouryouView.text = souryouResult
-            }
-            binding.main1.setOnClickListener {
-                souryouResult += "1"
-                binding.amazonSouryouView.text = souryouResult
-            }
-            binding.main2.setOnClickListener {
-                souryouResult += "2"
-                binding.amazonSouryouView.text = souryouResult
-            }
-            binding.main3.setOnClickListener {
-                souryouResult += "3"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main4.setOnClickListener {
-                souryouResult += "4"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main5.setOnClickListener {
-                souryouResult += "5"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main6.setOnClickListener {
-                souryouResult += "6"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main7.setOnClickListener {
-                souryouResult += "7"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main8.setOnClickListener {
-                souryouResult += "8"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
-            binding.main9.setOnClickListener {
-                souryouResult += "9"
-                binding.amazonSouryouView.text = souryouResult.toString()
-            }
+        binding.main1.setOnClickListener {
+            plusvalue(1)
+        }
+        binding.main2.setOnClickListener {
 
+        }
+        binding.main3.setOnClickListener {
+            calcResult += "3"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main4.setOnClickListener {
+            calcResult += "4"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main5.setOnClickListener {
+            calcResult += "5"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main6.setOnClickListener {
+            calcResult += "6"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main7.setOnClickListener {
+            calcResult += "7"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main8.setOnClickListener {
+            calcResult += "8"
+            binding.amazonKakakuView.text = calcResult.toString()
+        }
+        binding.main9.setOnClickListener {
+            calcResult += "9"
+            binding.amazonKakakuView.text = calcResult.toString()
         }
 
         //スピナー
@@ -174,5 +124,18 @@ class AmazonActivity : AppCompatActivity() {
             outViewResult = (calcResult.toInt() + souryouResult.toInt() *spinnernumber).toString()
             binding.amazonOutView.text = outViewResult
         }
+
+        //計算用関数
+        fun plusValue (x: Int){
+            if(sentaku == "1") {
+                calcResult += x
+                binding.amazonSouryouView.text = calcResult
+            }
+            else if (sentaku == "2"){
+                souryouResult += x
+                binding.amazonSouryouView.text = souryouResult
+            }
+        }
+
     }
 }
