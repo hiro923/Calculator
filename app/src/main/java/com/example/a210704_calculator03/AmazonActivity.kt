@@ -58,37 +58,29 @@ class AmazonActivity : AppCompatActivity() {
             plusvalue(1)
         }
         binding.main2.setOnClickListener {
-
+            plusValue(2)
         }
         binding.main3.setOnClickListener {
-            calcResult += "3"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(3)
         }
         binding.main4.setOnClickListener {
-            calcResult += "4"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(4)
         }
         binding.main5.setOnClickListener {
-            calcResult += "5"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(5)
         }
         binding.main6.setOnClickListener {
-            calcResult += "6"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(6)
         }
         binding.main7.setOnClickListener {
-            calcResult += "7"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(7)
         }
         binding.main8.setOnClickListener {
-            calcResult += "8"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(8)
         }
         binding.main9.setOnClickListener {
-            calcResult += "9"
-            binding.amazonKakakuView.text = calcResult.toString()
+            plusValue(9)
         }
-
         //スピナー
         val spinner = findViewById<Spinner>(R.id.amazon_spinner)
         val adapter = ArrayAdapter.createFromResource(this, R.array.amazon, android.R.layout.simple_spinner_item)
