@@ -22,8 +22,6 @@ class HeikinActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        var a = 2 * 3
-
         binding.heikinnInView.text = "0"
         binding.heikinnDateView.text = ""
 
@@ -35,11 +33,11 @@ class HeikinActivity : AppCompatActivity() {
             if(calcResult != ""){
 
                 valueList.add(calcResult)   //画面の数をvalueListへ
-//                var text = StringBuilder()
-//                for (i in valueList.indices){     //TODO  valueListの中身を順にtextへ追加ていき、入れ終わったらheikinDateViewへtextを代入
-//                    text.append(valueList[i])
-//                }
-//                binding.heikinnDateView.text = text
+                var text = StringBuilder()
+                for (i in valueList.indices){     //TODO  valueListの中身を順にtextへ追加ていき、入れ終わったらheikinDateViewへtextを代入
+                    text.append(valueList[i] + " ")
+                }
+                binding.heikinnDateView.text = text
             }
 
             //リストの中身を計算
@@ -61,11 +59,20 @@ class HeikinActivity : AppCompatActivity() {
             binding.heikinnInView.text = calcResult
         }
 
+        //「取消」ボタン
+        binding.heikinnTorikesi.setOnClickListener {
+            Log.d("TAG", "onCreate: torikesi")
+            calcResult = ""
+            binding.heikinnInView.text = calcResult
+        }
+
         //「ac」ボタン
         binding.heikinnAC.setOnClickListener {
             valueList = arrayListOf<String>()
             calcResult = ""
             binding.heikinnInView.text = calcResult
+            binding.heikinnDateView.text = ""
+            binding.heikinnOutView.text = ""
         }
 
         //数字ボタン
