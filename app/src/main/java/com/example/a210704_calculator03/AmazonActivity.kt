@@ -2,10 +2,12 @@ package com.example.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import androidx.core.graphics.scaleMatrix
 import com.example.a210704_calculator03.databinding.ActivityAmazonBinding
 import com.example.a210704_calculator03.databinding.ActivityMairuBinding
 
@@ -29,6 +31,19 @@ class AmazonActivity : AppCompatActivity() {
         var sentaku = "0"
         binding.amazonKakakuView.text = "0"
 
+        //計算用関数
+        fun plusValue (x: Int){
+            if(sentaku == "1") {
+                calcResult += x
+                binding.amazonKakakuView.text = calcResult
+            }
+
+            else if (sentaku == "2"){
+                souryouResult += x
+                binding.amazonSouryouView.text = souryouResult
+            }
+        }
+
         //選択ボタン
         binding.amazonSentaku.setOnClickListener {
             sentaku = "1"
@@ -48,14 +63,13 @@ class AmazonActivity : AppCompatActivity() {
             binding.amazonKakakuView.text = calcResult
         }
 
-
         //数字ボタン
         binding.main0.setOnClickListener {
             plusValue(0)
         }
 
         binding.main1.setOnClickListener {
-            plusvalue(1)
+            plusValue(1)
         }
         binding.main2.setOnClickListener {
             plusValue(2)
@@ -81,6 +95,7 @@ class AmazonActivity : AppCompatActivity() {
         binding.main9.setOnClickListener {
             plusValue(9)
         }
+
         //スピナー
         val spinner = findViewById<Spinner>(R.id.amazon_spinner)
         val adapter = ArrayAdapter.createFromResource(this, R.array.amazon, android.R.layout.simple_spinner_item)
@@ -117,17 +132,6 @@ class AmazonActivity : AppCompatActivity() {
             binding.amazonOutView.text = outViewResult
         }
 
-        //計算用関数
-        fun plusValue (x: Int){
-            if(sentaku == "1") {
-                calcResult += x
-                binding.amazonSouryouView.text = calcResult
-            }
-            else if (sentaku == "2"){
-                souryouResult += x
-                binding.amazonSouryouView.text = souryouResult
-            }
-        }
 
     }
 }

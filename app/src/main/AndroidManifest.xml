@@ -16,7 +16,8 @@
         <activity android:name=".TanikansanActivity" />
         <activity android:name=".HeikinActivity"/>
         <activity android:name=".CalculatorActivity"/>
-        <activity android:name=".tuukaActivity" >
+        <activity android:name=".tuukaActivity"/>
+        <activity android:name=".AmazonActivity">
         //ここから
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,6 @@
         //ここまで を起動時に開きたいアクティビティのタグ内に書き込む 参考
         https://qiita.com/okhiroyuki/items/8410433493c83ff6b4ca
         </activity>
-        <activity android:name=".AmazonActivity"/>
         <activity android:name=".GenkaActivity" />
         <activity android:name=".MainActivity" />
     </application>
