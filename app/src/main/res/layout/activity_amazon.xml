@@ -47,10 +47,12 @@
 
     <TextView
         android:id="@+id/amazon_souryouView"
-        android:layout_width="170dp"
+        android:layout_width="190dp"
         android:layout_height="70dp"
+        android:layout_marginTop="56dp"
         android:text="送料"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazon_kakakuView" />
 
     <Button
         android:id="@+id/main_7"
@@ -176,7 +178,7 @@
 
     <TextView
         android:id="@+id/amazon_kakakuView"
-        android:layout_width="170dp"
+        android:layout_width="190dp"
         android:layout_height="70dp"
         android:text="価格"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -43,6 +43,7 @@ class AmazonActivity : AppCompatActivity() {
         //「ac」ボタン
         binding.mainAC.setOnClickListener {
             calcResult = ""
+            souryouResult = ""
             outViewResult = ""
             binding.amazonKakakuView.text = calcResult
         }
@@ -143,13 +144,13 @@ class AmazonActivity : AppCompatActivity() {
         val adapter = ArrayAdapter.createFromResource(this, R.array.amazon, android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
-
+        var spinnerResult = ""
         // OnItemSelectedListenerの実装
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
 
             // 項目が選択された時に呼ばれる
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                val spinnerResult = parent?.selectedItem as String
+                 spinnerResult = parent?.selectedItem as String
             }
 
             // 基本的には呼ばれないが、何らかの理由で選択されることなく項目が閉じられたら呼ばれる
@@ -157,15 +158,21 @@ class AmazonActivity : AppCompatActivity() {
 
             }
         }
-        if (spinner == "本"){
 
+        var spinnernumber = 0
+        if(spinnerResult == "本"||spinnerResult == "CD・レコード"||spinnerResult == "DVD"||spinnerResult == "ビデオ"
+            ||spinnerResult == "PCソフト"||spinnerResult == "TVゲーム"||spinnerResult == "ペット用品"||spinnerResult == "文房具・オフィス用品"){
+            spinnernumber = 1.15.toInt()
         }
-
-
+        if(spinnerResult == "おもちゃ"||spinnerResult == "ドラッグストア"||spinnerResult == "美容"||spinnerResult == "スポーツ・アウトドア"
+            ||spinnerResult == "車・バイク用品"){
+            spinnernumber = 1.1.toInt()
+        }
 
         //出力ボタン
         binding.amazonOut.setOnClickListener {
-            outViewResult =
+            outViewResult = (calcResult.toInt() + souryouResult.toInt() *spinnernumber).toString()
+            binding.amazonOutView.text = outViewResult
         }
     }
 }
