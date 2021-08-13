@@ -2,6 +2,9 @@ package com.example.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Spinner
 import com.example.a210704_calculator03.databinding.ActivityAmazonBinding
 import com.example.a210704_calculator03.databinding.ActivityMairuBinding
@@ -136,9 +139,28 @@ class AmazonActivity : AppCompatActivity() {
         }
 
         //スピナー
-        Spinner spinner = (Spinner)findViewById(R.id.amazon_spinner);
-        // 選択されているアイテムを取得
-        var spnnerResult = (String)spinner.getSelectedItem();
+        val spinner = findViewById<Spinner>(R.id.amazon_spinner)
+        val adapter = ArrayAdapter.createFromResource(this, R.array.amazon, android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+
+        // OnItemSelectedListenerの実装
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+
+            // 項目が選択された時に呼ばれる
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val spinnerResult = parent?.selectedItem as String
+            }
+
+            // 基本的には呼ばれないが、何らかの理由で選択されることなく項目が閉じられたら呼ばれる
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+        }
+        if (spinner == "本"){
+
+        }
+
 
 
         //出力ボタン
