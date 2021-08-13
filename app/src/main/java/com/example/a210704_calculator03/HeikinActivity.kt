@@ -34,7 +34,7 @@ class HeikinActivity : AppCompatActivity() {
 
                 valueList.add(calcResult)   //画面の数をvalueListへ
                 var text = StringBuilder()
-                for (i in valueList.indices){     //TODO  valueListの中身を順にtextへ追加ていき、入れ終わったらheikinDateViewへtextを代入
+                for (i in valueList.indices){
                     text.append(valueList[i] + " ")
                 }
                 binding.heikinnDateView.text = text
