@@ -50,7 +50,7 @@
         android:layout_width="170dp"
         android:layout_height="70dp"
         android:text="送料"
-        app:layout_constraintTop_toBottomOf="@+id/amazon_kakakuin" />
+        tools:layout_editor_absoluteY="211dp" />
 
     <Button
         android:id="@+id/main_7"
@@ -93,22 +93,16 @@
         app:layout_constraintVertical_bias="0.978" />
 
     <Button
-        android:id="@+id/amazon_kakakuin"
+        android:id="@+id/amazon_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="入力"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="出力"
         app:backgroundTint="#434343"
-        app:layout_constraintEnd_toEndOf="@+id/amazon_kakakuView"
-        app:layout_constraintTop_toBottomOf="@+id/amazon_kakakuView" />
-
-    <Button
-        android:id="@+id/amazon_souryouin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="入力"
-        app:backgroundTint="#434343"
-        app:layout_constraintEnd_toEndOf="@+id/amazon_souryouView"
-        app:layout_constraintTop_toBottomOf="@+id/amazon_souryouView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazon_spinner" />
 
     <Button
         android:id="@+id/main0"

@@ -2,6 +2,7 @@ package com.example.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Spinner
 import com.example.a210704_calculator03.databinding.ActivityAmazonBinding
 import com.example.a210704_calculator03.databinding.ActivityMairuBinding
 
@@ -19,9 +20,9 @@ class AmazonActivity : AppCompatActivity() {
         setContentView(view)
 
         //初期化
-        var calcResult = ""                          //画面に表示する数・表示されている数
-        var valueList = mutableListOf<String>()
+        var calcResult = "" //画面に表示する数・表示されている数
         var souryouResult = ""
+        var outViewResult = ""
         var sentaku = "0"
         binding.amazonKakakuView.text = "0"
 
@@ -38,8 +39,8 @@ class AmazonActivity : AppCompatActivity() {
 
         //「ac」ボタン
         binding.mainAC.setOnClickListener {
-            valueList = arrayListOf<String>()
             calcResult = ""
+            outViewResult = ""
             binding.amazonKakakuView.text = calcResult
         }
 
@@ -92,48 +93,57 @@ class AmazonActivity : AppCompatActivity() {
         //数字ボタン
         if (sentaku == "2") {
             binding.main0.setOnClickListener {
-                calcResult += "0"
+                souryouResult += "0"
                 binding.amazonSouryouView.text = souryouResult
             }
             binding.main1.setOnClickListener {
-                calcResult += "1"
+                souryouResult += "1"
                 binding.amazonSouryouView.text = souryouResult
             }
             binding.main2.setOnClickListener {
-                calcResult += "2"
+                souryouResult += "2"
                 binding.amazonSouryouView.text = souryouResult
             }
             binding.main3.setOnClickListener {
-                calcResult += "3"
+                souryouResult += "3"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main4.setOnClickListener {
-                calcResult += "4"
+                souryouResult += "4"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main5.setOnClickListener {
-                calcResult += "5"
+                souryouResult += "5"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main6.setOnClickListener {
-                calcResult += "6"
+                souryouResult += "6"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main7.setOnClickListener {
-                calcResult += "7"
+                souryouResult += "7"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main8.setOnClickListener {
-                calcResult += "8"
+                souryouResult += "8"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
             binding.main9.setOnClickListener {
-                calcResult += "9"
+                souryouResult += "9"
                 binding.amazonSouryouView.text = souryouResult.toString()
             }
 
         }
 
+        //スピナー
+        Spinner spinner = (Spinner)findViewById(R.id.amazon_spinner);
+        // 選択されているアイテムを取得
+        var spnnerResult = (String)spinner.getSelectedItem();
 
+
+        //出力ボタン
+        binding.amazonOut.setOnClickListener {
+            outViewResult =
+        }
     }
 }
