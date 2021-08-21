@@ -2,6 +2,7 @@ package com.example.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -66,15 +67,14 @@ class tuukaActivity : AppCompatActivity() {
         }
 
         //「変換」ボタン
-        binding.tuukaHenkan.setOnClickListener {
+        binding.tuukaHenkan.setOnClickListener {    //TODO  為替レートを取得する必要あり
             when (inspinnerResult) {
-                "JPY" -> {}
+                "JPY" -> {Log.d("TAG", "when : JPY")}
+                "CNY" -> {Log.d("TAG", "when : CNY")}
+                "USD" -> {Log.d("TAG", "when : USD")}
+                "EUR" -> {Log.d("TAG", "when : EUR")}
+                "KRW" -> {Log.d("TAG", "when : KRW")}
             }
-//            <item>JPY</item>
-//            <item>CNY</item>
-//            <item>USD</item>
-//            <item>EUR</item>
-//            <item>KRW</item>
         }
 
         //「ac」ボタン
