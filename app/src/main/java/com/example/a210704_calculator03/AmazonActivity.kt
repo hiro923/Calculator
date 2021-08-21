@@ -128,7 +128,7 @@ class AmazonActivity : AppCompatActivity() {
 
         //出力ボタン
         binding.amazonOut.setOnClickListener {
-            outViewResult = (calcResult.toInt() + souryouResult.toInt() *spinnernumber).toString()
+            outViewResult = calcResult
             binding.amazonOutView.text = outViewResult
         }
 

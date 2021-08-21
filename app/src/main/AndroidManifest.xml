@@ -12,12 +12,7 @@
         <activity android:name=".RiekiActivity"/>
         <activity android:name=".MairuActivity"/>
         <activity android:name=".NengouActivity" />
-        <activity android:name=".SyouhizeiActivity" />
-        <activity android:name=".TanikansanActivity" />
-        <activity android:name=".HeikinActivity"/>
-        <activity android:name=".CalculatorActivity"/>
-        <activity android:name=".tuukaActivity"/>
-        <activity android:name=".AmazonActivity">
+        <activity android:name=".SyouhizeiActivity" >
         //ここから
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -25,6 +20,13 @@
         </intent-filter>
         //ここまで を起動時に開きたいアクティビティのタグ内に書き込む 参考
         https://qiita.com/okhiroyuki/items/8410433493c83ff6b4ca
+        </activity>
+        <activity android:name=".TanikansanActivity" />
+        <activity android:name=".HeikinActivity"/>
+        <activity android:name=".CalculatorActivity"/>
+        <activity android:name=".tuukaActivity"/>
+        <activity android:name=".AmazonActivity">
+
         </activity>
         <activity android:name=".GenkaActivity" />
         <activity android:name=".MainActivity" />
