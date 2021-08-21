@@ -81,7 +81,7 @@ class SyouhizeiActivity : AppCompatActivity() {
                 valueList.add(calcResult)   //画面の数をvalueListへ
 
                 //計算結果を出力
-                var kmResult = Math.round(binding.syouhizeiInView.text.toString().toInt() * 1.1)
+                var kmResult = Math.floor(binding.syouhizeiInView.text.toString().toInt() * 1.1)
                 binding.syouhizeiOutView.text = kmResult.toString()
 
                 //初期化 (calcResultを除く)
@@ -97,7 +97,7 @@ class SyouhizeiActivity : AppCompatActivity() {
                     valueList.add(calcResult)   //画面の数をvalueListへ
 
                     //計算結果を出力
-                    var kmResult =Math.round(binding.syouhizeiInView.text.toString().toInt() * 0.9)
+                    var kmResult =Math.ceil(binding.syouhizeiInView.text.toString().toInt() * 0.9)
                     binding.syouhizeiOutView.text = kmResult.toString()
 
                     //初期化 (calcResultを除く)
