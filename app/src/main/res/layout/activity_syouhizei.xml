@@ -8,19 +8,6 @@
 
 
     <Button
-        android:id="@+id/syouhizei_zeinukika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="税抜化"
-        app:backgroundTint="#434343"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335" />
-
-    <Button
         android:id="@+id/syouhizei_zeikomika"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,10 +15,10 @@
         app:backgroundTint="#434343"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintVertical_bias="0.341" />
 
     <TextView
         android:id="@+id/syouhizei_inView"

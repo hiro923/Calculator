@@ -89,21 +89,21 @@ class SyouhizeiActivity : AppCompatActivity() {
             }
 
             //「税抜き」ボタン
-            binding.syouhizeiZeinukika.setOnClickListener {
-
-                //calcResultの中身が""の場合、valueListにはいれない
-                if (calcResult != "") {
-
-                    valueList.add(calcResult)   //画面の数をvalueListへ
-
-                    //計算結果を出力
-                    var kmResult =Math.ceil(binding.syouhizeiInView.text.toString().toInt() * 0.9)
-                    binding.syouhizeiOutView.text = kmResult.toString()
-
-                    //初期化 (calcResultを除く)
-                    valueList = mutableListOf<String>()
-                }
-            }
+//            binding.syouhizeiZeinukika.setOnClickListener {
+//
+//                //calcResultの中身が""の場合、valueListにはいれない
+//                if (calcResult != "") {
+//
+//                    valueList.add(calcResult)   //画面の数をvalueListへ
+//
+//                    //計算結果を出力
+//                    var kmResult =Math.ceil(binding.syouhizeiInView.text.toString().toInt() * 0.9)
+//                    binding.syouhizeiOutView.text = kmResult.toString()
+//
+//                    //初期化 (calcResultを除く)
+//                    valueList = mutableListOf<String>()
+//                }
+        //           }
         }
     }
 }
