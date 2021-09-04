@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a210704_calculator03">
+    package="com.oji_application2021.a210704_calculator03">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.210704_Calculator03">
-        <activity android:name=".RiekiActivity"/>
-        <activity android:name=".MairuActivity"/>
-        <activity android:name=".NengouActivity">
+        <activity android:name="com.oji_application2021.a210704_calculator03.RiekiActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.MairuActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.NengouActivity">
         </activity>
-        <activity android:name=".SyouhizeiActivity" >
+        <activity android:name="com.oji_application2021.a210704_calculator03.SyouhizeiActivity" >
         //ここから
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,13 @@
         //ここまで を起動時に開きたいアクティビティのタグ内に書き込む 参考
         https://qiita.com/okhiroyuki/items/8410433493c83ff6b4ca
     </activity>
-        <activity android:name=".TanikansanActivity" />
-        <activity android:name=".HeikinActivity"/>
-        <activity android:name=".CalculatorActivity"/>
-        <activity android:name=".tuukaActivity"/>
-        <activity android:name=".AmazonActivity"/>
-        <activity android:name=".GenkaActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.oji_application2021.a210704_calculator03.TanikansanActivity" />
+        <activity android:name="com.oji_application2021.a210704_calculator03.HeikinActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.CalculatorActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.tuukaActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.AmazonActivity"/>
+        <activity android:name="com.oji_application2021.a210704_calculator03.GenkaActivity" />
+        <activity android:name="com.oji_application2021.a210704_calculator03.MainActivity" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

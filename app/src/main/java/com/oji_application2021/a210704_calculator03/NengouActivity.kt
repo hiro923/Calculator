@@ -1,11 +1,8 @@
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.a210704_calculator03.databinding.ActivityCalculatorBinding
-import com.example.a210704_calculator03.databinding.ActivityNengouBinding
-import java.lang.ArithmeticException
+import com.oji_application2021.a210704_calculator03.databinding.ActivityNengouBinding
 
 class NengouActivity : AppCompatActivity() {
 

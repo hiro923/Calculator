@@ -1,8 +1,8 @@
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.a210704_calculator03.databinding.ActivitySyouhizeiBinding
+import com.oji_application2021.a210704_calculator03.databinding.ActivitySyouhizeiBinding
 
 class SyouhizeiActivity : AppCompatActivity() {
 

@@ -1,14 +1,13 @@
 
 //TODO    履歴部分のプログラムを作成
 
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.a210704_calculator03.databinding.ActivityCalculatorBinding
+import com.oji_application2021.a210704_calculator03.databinding.ActivityCalculatorBinding
 import java.lang.ArithmeticException
-import java.lang.StringBuilder
 
 class CalculatorActivity : AppCompatActivity() {
 

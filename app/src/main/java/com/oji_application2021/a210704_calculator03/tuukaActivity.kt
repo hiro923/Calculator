@@ -1,4 +1,4 @@
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import com.example.a210704_calculator03.databinding.ActivityCalculatorBinding
-import com.example.a210704_calculator03.databinding.ActivityTuukaBinding
+import com.oji_application2021.a210704_calculator03.databinding.ActivityTuukaBinding
 
 class tuukaActivity : AppCompatActivity() {
 

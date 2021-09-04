@@ -1,15 +1,12 @@
-package com.example.a210704_calculator03
+package com.oji_application2021.a210704_calculator03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import androidx.core.graphics.scaleMatrix
-import com.example.a210704_calculator03.databinding.ActivityAmazonBinding
-import com.example.a210704_calculator03.databinding.ActivityMairuBinding
+import com.oji_application2021.a210704_calculator03.databinding.ActivityAmazonBinding
 
 class AmazonActivity : AppCompatActivity() {
 
